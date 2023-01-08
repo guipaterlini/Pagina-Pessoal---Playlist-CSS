@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Pessoal Guilherme Paterlini">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Guilherme Paterlini</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+    <script src="https://kit.fontawesome.com/8f8c778262.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="page_header">
+        <div class="logo">
+            <div class="img_logo">
+                <img src="./assets/images/logoicon.png" alt="Logo Guilherme Paterlini">
+            </div>
+            <p> G. Paterlini</p>
+        </div>
+        <nav>
+            <ul class="socialmedia">
+                <!-- target="_blank" é para que o link abra em uma segunda aba 
+                    rel="noopener" é para evitar ataques maliciosos. Utilizar noopener somente em link externos, 
+                    internamente nao faria sentido-->
+                <li>
+                    <a href="https://github.com/guipaterlini" target="_blank" rel="noopener">
+                        Github
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/guilhermepaterlini/" target="_blank" rel="noopener">
+                        Linkedin
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5567991878181" target="_blank" rel="noopener">
+                        Whatsapp
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="socialmedia_icons">
+                <li>
+                    <a href="https://github.com/guipaterlini" target="_blank" rel="noopener">
+                        <img src="./assets/images/githubicon.png" alt="Ícone Github">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/guilhermepaterlini/" target="_blank" rel="noopener">
+                        <img src="./assets/images/linkedinicon.png" alt="Ícone Linkedin">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wa.me/5567991878181" target="_blank" rel="noopener">
+                        <img src="./assets/images/whatsappicon.png" alt="Ícone Whatsapp">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="profile_picture">
+                <figure class="foto_perfil">
+                    <img src="./assets/images/profileimage.png" alt="Foto Guilherme Paterlini">
+                </figure>
+                <div class="angulo"></div>
+            </div>
+            <div class="profile">
+                <div class="profile_description">
+                    <h1>Guilherme Paterlini</h1>
+                    <h5>Front End Developer</h5>
+                </div>
+
+                <div onclick="displayAbout()" class="biography_icon">
+                    <!-- Para o icone foi usado o https://fontawesome.com/ -->
+                    <i id="animation" class="fa-solid fa-angles-down"></i>
+                </div>
+
+                <div style="display: none;" id="about" class="biography">
+                    <p>
+                        Com 32 anos e depois de 5 anos trabalhando em uma startup, decidi sair da área administrativa
+                        e de relacionamento com o cliente para me tornar um programador.
+                    </p>
+                    <p>
+                        Vejo nessa carreira
+                        não só uma forma de ter acesso a um novo patamar de qualidade de vida para minha família, como
+                        também uma maneira de me desafiar em uma nova área de conhecimento.
+                    </p>
+                    <p>
+                        O aprendizado está sendo incrivelmente estimulante, com uma evolução que eu não achava
+                        ser possível antes de começar.
+                    </p>
+                    <p>
+                        Ainda assim não teria começado se não tivesse tido o apoio de minha esposa, família, amigos e
+                        colegas de trabalho, que não só me ajudaram com palavras mas também me deram oportunidade de
+                        testar meus conhecimentos.
+                    </p>
+                    <p id="agradecimento">
+                        Muito obrigado a todos!
+                    </p>
+                </div>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" id="email" name="email" placeholder="seu melhor email">
+                    <button type="submit">enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

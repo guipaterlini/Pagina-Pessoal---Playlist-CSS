@@ -2,7 +2,7 @@
 
 ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
 
-Página pessoal responsiva feito com base na aula de CSS do treinamento da Gama Academy. Tem como
+Página pessoal responsiva feito com base na aula de CSS do treinamento da Gama Academy.
 
 # 📁 Acesso ao projeto
 
